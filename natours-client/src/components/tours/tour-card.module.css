@@ -1,0 +1,125 @@
+/* Space system
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+*/
+
+/*
+text-color: #adb5bd
+body background: #69db7c
+*/
+
+:root {
+  --main-color: #69db7c;
+  --text-color: #adb5bd;
+}
+
+.card {
+  max-width: 15rem;
+  max-height: 24.375rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f1f3f5;
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.075);
+}
+
+.card-header {
+  background-color: var(--main-color);
+  height: 80px;
+  color: #f8f9fa;
+  position: relative;
+}
+
+.card-header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-header h3 {
+  position: absolute;
+  bottom: -20%;
+  transform: translate(70%);
+  font-size: 12px;
+  display: block;
+  background-color: var(--main-color);
+  padding: 8px;
+}
+
+.card-header h1,
+.card-header h2,
+.card-header h3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0.25rem;
+}
+
+.card-body {
+  background-color: #fff;
+  height: 9.875rem;
+  padding: 12px;
+  color: var(--text-color);
+  font-size: 0.8125rem;
+}
+
+.icon {
+  color: var(--main-color);
+}
+
+.card-body h2 {
+  font-size: 0.75rem;
+}
+
+.tour-details {
+  --detail-size: 0.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--detail-size);
+  row-gap: var(--detail-size);
+}
+
+.info {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.card-footer {
+  --footer-space: 0.75rem;
+  background-color: #e9ecef;
+  height: 60px;
+  padding: var(--footer-space);
+  color: var(--text-color);
+  display: flex;
+  font-size: var(--footer-space);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+}
+
+.ratings strong {
+  color: #495057;
+}
+
+.btn-details:link,
+.btn-details:visited {
+  text-decoration: none;
+  background-color: var(--main-color);
+  width: 3.125rem;
+  padding: 0.625rem;
+  border-radius: 1.125rem;
+  color: #fff;
+  font-size: 0.625rem;
+}
+
+.btn-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

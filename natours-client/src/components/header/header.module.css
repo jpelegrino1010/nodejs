@@ -1,0 +1,61 @@
+/* Space system
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+*/
+
+body {
+  font-size: 14px;
+}
+
+.header {
+  background-color: #343a40;
+  width: 85vw;
+  height: 6vh;
+  margin: 16px auto 0 auto;
+  color: #868e96;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.75rem 0 0.75rem;
+  text-transform: uppercase;
+}
+
+.header img {
+  width: 2rem;
+}
+
+.header h1 {
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+/* Links */
+.user a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.user a:link,
+.user a:visited {
+  color: #868e96;
+}
+
+/* HEADER SECTION */
+.user {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.user a:last-of-type {
+  border: 1px solid #868e96;
+  width: 61px;
+  height: 17px;
+  border-radius: 23px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+}

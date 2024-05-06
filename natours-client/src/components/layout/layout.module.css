@@ -1,0 +1,65 @@
+/* Space system
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+*/
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+
+  width: 85vw;
+  margin: 0 auto 0 auto;
+  padding: 0 0.75rem 0 0.75rem;
+  background-color: #f1f3f5;
+}
+
+.footer-layout {
+  width: 85vw;
+  height: auto;
+  margin: 16px auto 0 auto;
+}
+
+.header-layout {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  color: #868e96;
+}
+
+.footer img {
+  width: 300px;
+  height: 60px;
+  align-self: flex-end;
+  margin-bottom: 8px;
+}
+
+.footer section {
+  padding-right: 67px;
+}
+
+.footer section ul {
+  display: flex;
+  padding: 0;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.footer section ul li {
+  list-style-type: none;
+}
+
+.footer p {
+  display: inline-block;
+}

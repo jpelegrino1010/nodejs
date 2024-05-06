@@ -1,0 +1,17 @@
+/* Space system
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+*/
+
+.main-container {
+  --cards-space: 2.7rem;
+
+  margin: 48px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: var(--cards-space);
+  column-gap: var(--cards-space);
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,30 @@
+/* Space system
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+*/
+
+.login {
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  padding: 32px;
+  margin: 48px auto;
+}
+
+.login h1 {
+  margin-bottom: 32px;
+}
+
+.form-group label::after {
+  content: '\a';
+  white-space: pre;
+}
+
+.form-group label {
+  margin-bottom: 2px;
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
